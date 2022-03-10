@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startChronometer"
+        android:text="start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pause"
+        android:onClick="pauseChronometer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:onClick="resetChronometer"/>
+
+    <Button
+        android:id="@+id/btn_lap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vuelta"
+        android:onClick="setOnClickListener"/>
+
+    <ScrollView
+        android:id="@+id/sv_laps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_laps"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_weight="6"
+            android:text=""/>
+
+    </ScrollView>
+
+</LinearLayout>
